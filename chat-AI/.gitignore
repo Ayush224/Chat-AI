@@ -24,4 +24,4 @@ dist-ssr
 *.sw?
 key.js
 .env
-images/
+src/components/mainscreen/images/
