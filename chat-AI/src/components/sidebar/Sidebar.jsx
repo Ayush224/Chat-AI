@@ -36,7 +36,7 @@ const Sidebar = () => {
             <p className="mt-7 mb-5">Recent</p>
             {prevPrompt.map((item, index) => {
               return (
-                <div onClick={() => prevSearch(item)} className="flex items-start gap-2.5 p-2.5 pr-10 rounded-4xl text-gray-900 cursor-pointer hover:bg-gray-300">
+                <div key={index} onClick={() => prevSearch(item)} className="flex items-start gap-2.5 p-2.5 pr-10 rounded-4xl text-gray-900 cursor-pointer hover:bg-gray-300">
                   <MessageSquare />
                   <p>{item.slice(0, 20)}...</p>
                 </div>
