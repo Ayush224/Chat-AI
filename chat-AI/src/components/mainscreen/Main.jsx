@@ -1,6 +1,8 @@
 import React, { useContext } from "react";
 import Profile from "./images/profile-icon.png";
 import Gemini from "./images/gemini.png";
+import logo from "./images/logo.png";
+
 import {
   Code,
   Compass,
@@ -16,13 +18,14 @@ import "./main.css"
 
 const Main = () => {
   const { onSent, recPrompt, showResult, loading, data, input, setInput } =
-    useContext(context);
+  useContext(context);
+  
 
   return (
     <div className="flex-1 min-h-[100vh] pb-[15vh] relative">
       <div className="flex items-center justify-between text-2xl p-5 text-[#585858]">
         <p>Chat-AI</p>
-        <img className="w-10 rounded-full" src={Profile} alt="profile" />
+        <img className="w-10 rounded-full" src={logo} alt="profile" />
       </div>
       <div className="max-w-4xl m-auto">
         {!showResult ? (
