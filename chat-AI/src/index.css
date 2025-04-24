@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+*{
+    font-family: Outfit;
+}
+
+#root{
+    min-height: 100vh;
+    display: flex;
+    animation: refreshEffect 2s;
+}
+
+@keyframes refreshEffect {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

@@ -1,0 +1,46 @@
+
+.result::-webkit-scrollbar{
+    display: none;
+}
+
+hr{
+    background-size: 800px 50px;
+    animation: loader 3s infinite linear;
+}
+
+@keyframes loader {
+    0%{
+        background-position: -800px 0px;
+    }
+    100%{
+        background-position: 800px 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    input {
+        flex: none;
+        width: 70%;
+    }
+    .para {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+    .search {
+        padding: 5px 10px;
+    }
+
+    .search div {
+        gap: 5px;
+    }
+}
+
