@@ -1,5 +1,6 @@
 import axios from "axios";
-import key from './key'
+
+const key = import.meta.env.VITE_API_KEY ;
 
 
 async function getAnswer(prompt){
