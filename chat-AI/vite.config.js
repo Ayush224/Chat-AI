@@ -6,4 +6,8 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: '/chat-AI/',
+  build: {
+    outDir: 'chat-AI', 
+    emptyOutDir: true,
+  },
 })
